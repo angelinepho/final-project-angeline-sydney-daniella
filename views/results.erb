@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Your Product</title>
+  <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body>
+    <!--<body bgcolor="#caa9ad">-->
+    <img src="images/newlogo.png">
+    <div id="answer">
+      <% if @answer.length==5 %>
+    <h1><%=@name%></h1>
+    <h4>$<%=@price%></h4>
+    <h4><a href="<%=@product_link%>">Buy the Product!</a></h4>
+    <p><%=@description%></p>
+    <img src="<%=@image_link%>">
+      <% else %>
+    <h2>Sorry, no products found. Please try again!</h2>
+    <% end %>
+  
+    
+
+  </body>
+</html>
